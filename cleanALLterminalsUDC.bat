@@ -1,0 +1,1 @@
+psexec @c:\service\sbis\udc.txt -s reg import \\srv-udc-rdsh-03\sbis\ner.reg

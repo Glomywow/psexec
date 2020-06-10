@@ -1,0 +1,9 @@
+psexec @c:\service\sbis\udc.txt -s reg import \\srv-udc-rdsh-03\sbis\temp.reg - установка сертификата по всей ферме
+psexec @C:\Service\sbis\udc.txt -s -d cmd /c "powershell -noninteractive -file c:\service\clean.ps1" - чистка диска с по всей ферме
+
+
+
+
+
+
+psexec @c:\service\sbis\udc.txt REG ADD "HKU\S-1-5-21-2562163532-2550886452-409202375-54896\Control Panel\Desktop" /v LogPixels /t REG_DWORD /d 120 /f
