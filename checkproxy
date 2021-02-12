@@ -1,0 +1,6 @@
+$bks =  @(gc C:\service\admin\vtb.txt)
+foreach ($bk in $bks){
+
+
+cmd /c  "C:\service\psexec" -u bit\Bankklient -p  \\$bk reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v proxyenable>>\\SRV-098-BUH-02\proxy\$bk.txt 
+}
